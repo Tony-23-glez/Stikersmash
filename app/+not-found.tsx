@@ -4,13 +4,15 @@ import { StyleSheet, Text, View } from "react-native";
 export default function NotFoundScreen() {
   return (
     <>
-    <Stack.Screen options={{ title: 'Not Found' }} />
-    <View style = {styles.container}>
-      <Text style={styles.text}>Home</Text>
-      <Link href="./" style={styles.button}>
-    Go back to home screen
-  </Link>
-    </View>
+      <Stack.Screen options={{ title: "Not Found" }} />
+
+      <View style={styles.container}>
+        <Text style={styles.text}>Página no encontrada</Text>
+
+        <Link href="./" style={styles.button}>
+          Go to Home
+        </Link>
+      </View>
     </>
   );
 }
@@ -18,16 +20,17 @@ export default function NotFoundScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-  backgroundColor: '#25292e',
-alignItems: 'center',
-justifyContent: 'center',
+    backgroundColor: "#25292e",
+    alignItems: "center",
+    justifyContent: "center",
   },
-  text:{
-    color: '#fff',
+  text: {
+    color: "#fff",
+    fontSize: 18,
   },
   button: {
     fontSize: 20,
-    textDecorationLine: 'underline',
-    color: '#fff',
+    textDecorationLine: "underline",
+    color: "#fff",
   },
 });
